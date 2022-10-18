@@ -1,0 +1,1 @@
+This is a project to learn about cookies, sessions and authorization in rails.
