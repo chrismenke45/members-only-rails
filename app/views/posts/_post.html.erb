@@ -1,0 +1,16 @@
+<li class="postBox flexVertCenter">
+    <h3 class="postTitle">
+        <%= post.title %>
+    </h3>
+    <p>
+        <%= post.description %>
+    </p>
+    <% if current_user %>
+        <p class="byUser">
+            By: <%= post.user.username %>
+        </p>
+        <p class="timeAgo">
+            <%= time_ago_in_words(post.created_at) %>
+        </p>
+    <% end %>
+</li>

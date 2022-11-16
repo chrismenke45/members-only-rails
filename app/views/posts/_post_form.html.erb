@@ -1,0 +1,7 @@
+<%= form_with class: "postForm flexVertCenter", model: @post do |form| %>
+    <%= form.label :title, "Title:" %>
+    <%= form.text_field :title, maxlength: 12, minlength: 4 %>
+    <%= form.label :description, "Body:" %>
+    <%= form.text_area :description, maxlength: 300 %>
+    <%= form.submit "Post", class: "navItem" %>
+  <% end %>

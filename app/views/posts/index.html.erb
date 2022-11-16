@@ -1,0 +1,6 @@
+<%= link_to "New Post", new_post_path, class: "navItem" %>
+  <ul id="postList" class="flexVertCenter">
+    <% @posts.each do |post| %>
+      <%= render post %> 
+    <% end %>
+  </ul>

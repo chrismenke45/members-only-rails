@@ -1,0 +1,189 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: Times, 'Times New Roman', serif;
+}
+.flexVertCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.flexHorizCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#postList {
+    max-width: 300px;
+    width: 100%;
+    background-color: #e8ecee;
+    border-radius: 15px;
+    border: black solid 1px;
+}
+.postBox {
+    border-bottom: black solid 1px;
+    width: 95%;
+    padding: 10px 0;
+    /*
+    margin: 10px 0 0 0;
+    padding: 0 0 10px 0;
+    */
+}
+.postBox > * {
+    margin: 1px;
+}
+.byUser {
+    font-size: 14px;
+}
+.timeAgo {
+    font-size: 12px;
+}
+.postTitle {
+    text-decoration: underline;
+    font-weight: normal;
+}
+.newPost {
+    max-width: 300px;
+    width: 100%;
+    background-color: #e8ecee;
+    border-radius: 15px;
+    border: black solid 1px;
+    margin: 5px;
+}
+/*.postForm > textarea, .postForm > input {
+    max-width: 250px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    max-height: 300px;
+    border: none;
+    font-size: 8;
+}*/
+textarea, input {
+    max-width: 250px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    max-height: 300px;
+    border: none;
+    font-size: 8;
+}
+.userForm {
+    max-width: 300px;
+    width: 100%;
+    background-color: #e8ecee;
+    border-radius: 15px;
+    border: black solid 1px;
+    margin: 5px;
+}
+ul {
+    list-style: none;
+    /*margin: 0;
+    padding: 0;*/
+}
+h1 {
+    margin: 10px;
+}
+h3 {
+    font-size: 18px;
+}
+main {
+    width: 100%;
+}
+body {
+    background-color: #75c0f3;
+}
+header {
+    width: 100%;
+    /*background-color: #5ab4f0;*/
+    background-color: #3498DB;
+    display: flex;
+    justify-content: flex-end;
+}
+nav {
+    width: 100%;
+    max-width: 1100px;
+}
+nav > ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#homeBtn {
+    padding: 8px;
+    font-size: 22px;
+}
+.navItem {
+    background-color: #3498DB;
+    color: white;
+    margin: 5px;
+    padding: 11px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navItem:hover, .navItem:focus {
+    background-color: #2980B9;
+  }
+  @keyframes fade {
+    0% {
+        opacity: 1;
+        /*transform: translate(0, 0px)
+        height: 18px;*/
+    }
+    /*10% {
+        opacity: 1;
+        transform: translate(0, -2px);
+    }
+    20% {
+        opacity: 1;
+        transform: translate(0, -4px);
+    }
+    30% {
+        opacity: 1;
+        transform: translate(0, -6px);
+    }
+    40% {
+        opacity: 1;
+        transform: translate(0, -8px);
+    }
+    50% {
+        opacity: 1;
+        transform: translate(0, -10px);
+    }
+    60% {
+        opacity: 1;
+        transform: translate(0, -12px);
+    }
+    70% {
+        opacity: 1;
+        transform: translate(0, -14px);
+    }
+    40% {
+        opacity: 1;
+        transform: translate(0, -16px);
+    }
+    0% {
+        opacity: 1;
+        transform: translate(0, -18px);
+    }*/
+    100% {
+        opacity: 0;
+        /*transform: translate(0, -18px);
+        height: 0px;*/
+    }
+  }
+.flash {
+    animation: fade 2s ease-in;
+    opacity: 0;
+    background-color: #75c0f3;
+    width: 100%;
+    text-align: center;
+    height: 0;
+}

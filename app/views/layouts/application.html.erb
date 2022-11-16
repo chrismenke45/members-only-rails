@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MembersOnly</title>
+    <title>Members Only</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -10,7 +10,13 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="flexVertCenter">
+    <header class="flexVertCenter">
+      <%= render "layouts/navbar" %>
+      <%= render "layouts/alerts" %>
+    </header>
+    <main class="flexVertCenter">
+      <%= yield %>
+    </main>
   </body>
 </html>
